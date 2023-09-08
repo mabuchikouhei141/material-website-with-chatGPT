@@ -53,8 +53,8 @@ const members = [
         </h2>
         
         <article className="bg-white p-6 rounded-lg shadow-lg mb-8 flex flex-col md:flex-row">
-        <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
-    <Image src="https://picsum.photos/300/500?random=1" alt="Random" width={300} height={500} />
+        <div className="image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/200/300?random=1" alt="Random" width={200} height={300} />
   </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
@@ -67,8 +67,8 @@ const members = [
         </article>
 
         <article className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
-        <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
-    <Image src="https://picsum.photos/300/500?random=2" alt="Random" width={300} height={500} />
+          <div className="image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/300/400?random=2" alt="Random" width={200} height={300} />
   </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
@@ -122,10 +122,7 @@ const members = [
   height={300} alt="Concept 2" className="rounded-t-lg mb-4" />
         <h2 className="text-2xl font-semibold mb-4">Quality</h2>
         <p className="text-lg leading-relaxed line-clamp-3">
-        <p className="text-lg leading-relaxed line-clamp-3">
-  We don&apos;t compromise on quality. Each project undergoes rigorous testing to ensure it meets our high standards.
-</p>
-
+        We don&apos;t compromise on quality. Each project undergoes rigorous testing to ensure it meets our high standards.
         </p>
       </div>
     </div>
