@@ -68,7 +68,7 @@ const members = [
 
         <article className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
           <div className="image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
-    <Image src="https://picsum.photos/300/400?random=2" alt="Random" width={200} height={300} />
+    <Image src="https://picsum.photos/200/300?random=2" alt="Random" width={200} height={300} />
   </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
