@@ -53,29 +53,30 @@ const members = [
         </h2>
         
         <article className="bg-white p-6 rounded-lg shadow-lg mb-8 flex flex-col md:flex-row">
-        <div className="image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
-    <Image src="https://picsum.photos/200/300?random=1" alt="Random" width={200} height={300} />
+        <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/200/300?random=1" alt="Random" width={400} height={600} />
   </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
               SUB HEADER
             </h2>
-            <p className="h-full text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed line-clamp-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ut tellus eget fermentum. Curabitur vel tincidunt metus, non facilisis enim.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi esse provident consequatur, doloribus eveniet aspernatur et quae ad culpa vel maiores harum minima dolorem rem! Eaque quae aliquid laudantium!
             </p>
           </div>
         </article>
 
         <article className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
-          <div className="image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
-    <Image src="https://picsum.photos/200/300?random=2" alt="Random" width={200} height={300} />
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/200/300?random=2" alt="Random" width={400} height={600} />
   </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
               SUB HEADER2
             </h2>
-            <p className="h-full text-lg leading-relaxed">
-              Morbi volutpat, justo in dapibus auctor, urna elit interdum velit, a sodales dui purus vitae purus. Sed euismod tellus eu ligula euismod, in commodo purus vehicula.
+            <p className=" text-lg leading-relaxed line-clamp-3">
+              Morbi volutpat, justo in dapibus auctor, urna elit interdum velit, a sodales dui purus vitae purus. Sed euismod tellus eu ligula euismod, in commodo purus vehicula.Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem, consequuntur iste deserunt sunt quam soluta velit incidunt nostrum enim, rem tenetur facere quasi, dolorum est hic adipisci possimus assumenda.
             </p>
           </div>
         </article>
