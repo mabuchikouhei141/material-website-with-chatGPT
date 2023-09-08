@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import 'font-awesome/css/font-awesome.min.css';
+import Image from 'next/image'
 
 
 
@@ -52,24 +53,28 @@ const members = [
         </h2>
         
         <article className="bg-white p-6 rounded-lg shadow-lg mb-8 flex flex-col md:flex-row">
-          <img src="https://picsum.photos/200/300" alt="Random" className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6" />
+        <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/300/500?random=1" alt="Random" width={300} height={500} />
+  </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
               SUB HEADER
             </h2>
-            <p className="text-lg leading-relaxed">
+            <p className="h-full text-lg leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales ut tellus eget fermentum. Curabitur vel tincidunt metus, non facilisis enim.
             </p>
           </div>
         </article>
 
         <article className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
-          <img src="https://picsum.photos/200/300?random=2" alt="Random" className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6" />
+        <div className="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+    <Image src="https://picsum.photos/300/500?random=2" alt="Random" width={300} height={500} />
+  </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
               SUB HEADER2
             </h2>
-            <p className="text-lg leading-relaxed">
+            <p className="h-full text-lg leading-relaxed">
               Morbi volutpat, justo in dapibus auctor, urna elit interdum velit, a sodales dui purus vitae purus. Sed euismod tellus eu ligula euismod, in commodo purus vehicula.
             </p>
           </div>
@@ -81,7 +86,8 @@ const members = [
   
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
     <div>
-      <img src="https://picsum.photos/400/400?random=3" alt="About Us" className="rounded-lg shadow-md w-full" />
+      <Image src="https://picsum.photos/400/400?random=3"  width={400}
+  height={400} alt="About Us" className="rounded-lg shadow-md w-full" />
     </div>
     <div>
       <h2 className="text-3xl md:text-4xl font-semibold mb-6">Our Journey</h2>
@@ -101,7 +107,8 @@ const members = [
   <div className="flex flex-wrap -mx-4">
     <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
       <div className="p-6 bg-white rounded-lg shadow-md h-full  ">
-        <img src="https://picsum.photos/400/300?random=4" alt="Concept 1" className="rounded-t-lg mb-4" />
+        <Image src="https://picsum.photos/400/300?random=4" alt="Concept 1" width={400}
+  height={300} className="rounded-t-lg mb-4" />
         <h2 className="text-2xl font-semibold mb-4">Innovation</h2>
         <p className="text-lg leading-relaxed line-clamp-3">
           Embracing the latest technology to deliver state-of-the-art solutions for our clients.
@@ -111,17 +118,22 @@ const members = [
 
     <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
       <div className="p-6 bg-white rounded-lg shadow-md h-full ">
-        <img src="https://picsum.photos/400/300?random=5" alt="Concept 2" className="rounded-t-lg mb-4" />
+        <Image src="https://picsum.photos/400/300?random=5"  width={400}
+  height={300} alt="Concept 2" className="rounded-t-lg mb-4" />
         <h2 className="text-2xl font-semibold mb-4">Quality</h2>
         <p className="text-lg leading-relaxed line-clamp-3">
-          We don't compromise on quality. Each project undergoes rigorous testing to ensure it meets our high standards.
+        <p className="text-lg leading-relaxed line-clamp-3">
+  We don&apos;t compromise on quality. Each project undergoes rigorous testing to ensure it meets our high standards.
+</p>
+
         </p>
       </div>
     </div>
 
     <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
       <div className="p-6 bg-white rounded-lg shadow-md h-full ">
-        <img src="https://picsum.photos/400/300?random=6" alt="Concept 3" className="rounded-t-lg mb-4" />
+        <Image src="https://picsum.photos/400/300?random=6"  width={400}
+  height={300} alt="Concept 3" className="rounded-t-lg mb-4" />
         <h2 className="text-2xl font-semibold mb-4 truncate">Collaboration</h2>
         <p className="text-lg leading-relaxed line-clamp-3">
           Working hand-in-hand with our clients to transform their vision into reality.
@@ -140,7 +152,8 @@ const members = [
     {[1, 2, 3, 4].map((i) => (
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8" key={i}>
           <Link href={`/works/${i}`} className="block p-6 bg-white rounded-lg shadow-md h-full transition-transform transform hover:scale-105">
-            <img src={`https://picsum.photos/400/300?random=${i+6}`} alt={`Work ${i}`} className="rounded-t-lg mb-4 w-full h-48 object-cover" />
+            <Image src={`https://picsum.photos/400/300?random=${i+6}`}  width={400}
+  height={300} alt={`Work ${i}`} className="rounded-t-lg mb-4 w-full h-48 object-cover" />
             <h2 className="text-2xl font-semibold mb-4 truncate">Project Title Number ${i}</h2>
             <p className="text-lg leading-relaxed line-clamp-2">
               This is a brief description of the project or achievement. Descriptions provide context and insight.
@@ -164,7 +177,8 @@ const members = [
     ].map((service, i) => (
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8" key={i}>
         <div className="block p-6 bg-white rounded-lg shadow-md h-full transition-transform transform hover:scale-105 text-center">
-          <img src={`https://picsum.photos/100/100?random=${i+10}`} alt={`${service.title} Icon`} className="mb-4 mx-auto w-16 h-16 object-cover rounded-full" />
+          <Image src={`https://picsum.photos/100/100?random=${i+10}`}  width={100}
+  height={100} alt={`${service.title} Icon`} className="mb-4 mx-auto w-16 h-16 object-cover rounded-full" />
           <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
           <p className="text-lg leading-relaxed">
             {service.desc}
@@ -179,13 +193,16 @@ const members = [
   <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center">MEMBER</h1>
   
   <div className="grid md:grid-cols-3 gap-8 items-start">
-    {members.map((member) => (
-      <div className="bg-white p-6 h-full rounded-lg shadow-md flex flex-col justify-center ">
-        <img src={member.image} alt={`Portrait of ${member.name}`} className="rounded-full w-48 h-48 mx-auto mb-4" />
+  {members.map((member, index) => (
+  
+      <div key={index} className="bg-white p-6 h-full rounded-lg shadow-md flex flex-col justify-center ">
+        <Image src={member.image} alt={`Portrait of ${member.name}`}  width={200}
+  height={300} className="rounded-full w-48 h-48 mx-auto mb-4" />
         <h2 className="text-2xl font-semibold mb-2 text-center">{member.name}</h2>
         <p className="text-center mb-4">{member.role}</p>
         <p className="text-lg leading-relaxed text-center">{member.description}</p>
       </div>
+    
     ))}
   </div>
 </section>
@@ -211,7 +228,8 @@ const members = [
         
         <div className="mb-4">
           <label htmlFor="message" className="block text-sm font-semibold mb-2">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your Message" className="w-full p-2 border rounded"></textarea>
+          <textarea id="message" name="message" rows={4} placeholder="Your Message" className="w-full p-2 border rounded"></textarea>
+
         </div>
         
         <button type="submit" className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">Send</button>
